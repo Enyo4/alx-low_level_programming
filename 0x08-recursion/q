@@ -1,0 +1,82 @@
+SQRT(3)     Linux Programmer's Manual    SQRT(3)
+
+NNAAMMEE
+       sqrt, sqrtf, sqrtl - square root function
+
+SSYYNNOOPPSSIISS
+       ##iinncclluuddee <<mmaatthh..hh>>
+
+       ddoouubbllee ssqqrrtt((ddoouubbllee _x));;
+       ffllooaatt ssqqrrttff((ffllooaatt _x));;
+       lloonngg ddoouubbllee ssqqrrttll((lloonngg ddoouubbllee _x));;
+
+       Link with _-_l_m.
+
+   Feature  Test  Macro  Requirements  for glibc
+   (see ffeeaattuurree__tteesstt__mmaaccrrooss(7)):
+
+       ssqqrrttff(), ssqqrrttll():
+           _ISOC99_SOURCE ||
+           _POSIX_C_SOURCE >= 200112L
+               || /* Since glibc 2.19: */ _DE‐
+           FAULT_SOURCE
+               || /* Glibc versions <= 2.19: */
+           _BSD_SOURCE || _SVID_SOURCE
+
+DDEESSCCRRIIPPTTIIOONN
+       These  functions  return  the nonnegative
+       square root of _x.
+
+RREETTUURRNN VVAALLUUEE
+       On success, these  functions  return  the
+       square root of _x.
+
+       If _x is a NaN, a NaN is returned.
+
+       If _x is +0 (-0), +0 (-0) is returned.
+
+       If  _x  is positive infinity, positive in‐
+       finity is returned.
+
+       If _x is less than -0, a domain error  oc‐
+       curs, and a NaN is returned.
+
+EERRRROORRSS
+       See  mmaatthh__eerrrroorr(7) for information on how
+       to determine whether  an  error  has  oc‐
+       curred when calling these functions.
+
+       The following errors can occur:
+
+       Domain error: _x less than -0
+              _e_r_r_n_o  is set to EEDDOOMM.  An invalid
+              floating-point  exception  (FFEE__IINN‐‐
+              VVAALLIIDD) is raised.
+
+AATTTTRRIIBBUUTTEESS
+       For  an  explanation of the terms used in
+       this section, see aattttrriibbuutteess(7).
+
+       ┌─────────────────────────┬───────────────┬─────────┐
+       │IInntteerrffaaccee                │ AAttttrriibbuuttee     │ VVaalluuee   │
+       ├─────────────────────────┼───────────────┼─────────┤
+       │ssqqrrtt(), ssqqrrttff(), ssqqrrttll() │ Thread safety │ MT-Safe │
+       └─────────────────────────┴───────────────┴─────────┘
+CCOONNFFOORRMMIINNGG TTOO
+       C99, POSIX.1-2001, POSIX.1-2008.
+
+       The variant returning  _d_o_u_b_l_e  also  con‐
+       forms to SVr4, 4.3BSD, C89.
+
+SSEEEE AALLSSOO
+       ccbbrrtt(3), ccssqqrrtt(3), hhyyppoott(3)
+
+CCOOLLOOPPHHOONN
+       This  page is part of release 5.05 of the
+       Linux _m_a_n_-_p_a_g_e_s project.   A  description
+       of the project, information about report‐
+       ing bugs, and the latest version of  this
+       page,      can      be      found      at
+       https://www.kernel.org/doc/man-pages/.
+
+                   2017-09-15            SQRT(3)

@@ -7,15 +7,20 @@
  */
 int factorial(int n)
 {
-int result = n;
+int x;
 
-	if (n < 0)
-		return (-1);
+if (n == 0)
+{
+return (1);
+}
+else if (n < 0)
+{
+return (-1);
+}
+else
+{
+x = n * factorial(n - 1);
+}
+return (x);
 
-	else if (n >= 0 && n <= 1)
-		return (1);
-
-	else
-		result *= factorial (n-1);
-return (result);
 }
