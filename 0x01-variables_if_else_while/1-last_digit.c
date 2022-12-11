@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/** 
+/**
 *main- finds the last digit of a random number
 *Returns: return 0 on success
 **/
