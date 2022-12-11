@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-// main: finds the last digit of a random number
+/** main-finds the last digit of a random number**/
 /* betty style doc for function main goes there */
 int main(void)
 {
