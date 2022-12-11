@@ -6,8 +6,8 @@
 /* betty style doc for function main goes there */
 /**
 *main- finds the last digit of a random number
-*Returns: return 0 on success
-**/
+*Return: return 0 on success
+*/
 int main(void)
 {
 int n;
@@ -31,4 +31,3 @@ printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l_d);
 }
 return (0);
 }
-
