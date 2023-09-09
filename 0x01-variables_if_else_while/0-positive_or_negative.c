@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Testing cases with if..else statement
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
