@@ -12,7 +12,7 @@ void jack_bauer(void)
 
 	for (f = 0; f < 3; f++)
 	{
-		for (s = 0; s < 4; s++)
+		for (s = 0; s <= 9; s++)
 		{
 			for (t = 0; t <= 5; t++)
 			{
@@ -23,6 +23,8 @@ void jack_bauer(void)
 					_putchar(58);
 					_putchar(t + '0');
 					_putchar(l + '0');
+					if ((f == 2) && (s == 3) && (t == 9) && (l == 9))
+						break;
 					_putchar('\n');
 				}
 			}
