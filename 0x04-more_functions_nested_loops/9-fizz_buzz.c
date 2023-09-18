@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Print numbers from 1 to 100
+ * main - prints numbers from 0 - 100
  *
- * Returns: 0
+ * Return: 0
  */
 int main(void)
 {
