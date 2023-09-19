@@ -8,11 +8,11 @@
  */
 void rev_string(char *s)
 {
-        int start, end, length = 0;
+        int i, start, end, length = 0;
 	char temp;
 
 	/* Calculate the length of the string */
-	for (; *s != '\n'; s++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		length++;
 	}
@@ -24,9 +24,8 @@ void rev_string(char *s)
 	{
 		temp = s[start];
 		s[start] = s[end];
-		s[end] = s[start];
+		s[end] = temp;
 		start++;
 		end--;
-	}
-		
+	}	
 }
