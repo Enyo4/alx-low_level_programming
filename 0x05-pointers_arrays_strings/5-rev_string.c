@@ -8,7 +8,7 @@
  */
 void rev_string(char *s)
 {
-        int i, start, end, length = 0;
+	int i, start, end, length = 0;
 	char temp;
 
 	/* Calculate the length of the string */
@@ -27,5 +27,5 @@ void rev_string(char *s)
 		s[end] = temp;
 		start++;
 		end--;
-	}	
+	}
 }
