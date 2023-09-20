@@ -5,7 +5,7 @@
  * @dest: The destination
  * @src: the source of the string
  *
- * Retun: a pointer to the resulting string dest
+ * Return: pointer to the resulting string dest
  */
 char *_strcat(char *dest, char *src)
 {
