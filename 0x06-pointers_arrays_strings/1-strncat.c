@@ -4,27 +4,22 @@
  * _strncat - Concatenates two strings with at most n bytes from src.
  * @src: source string that is concatenated
  * @dest: string where @src is added to
- * @n: number of lines to be added
  *
  * Return: pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int d = 0, s = 0;
-
+	int d = 0, s = 0, a = 0;
+	
 	while (dest[d] != '\0')
 	{
 		d++;
 	}
 
-	while (src[d] != '\0' && s < n)
+	for (; a < n && src[a] != '\0'; a++, d++)
 	{
-		dest[d] = src[s];
-		d++;
-		s++;
+		dest[d] = src[a];
 	}
-
 	dest[d] = '\0';
-
 	return (dest);
 }
