@@ -2,40 +2,23 @@
 
 /**
  * leet - encodes a string into 1337
- * @src: The given string
+ * @s: string to encode
  *
- * Return: New string
+ * Return: address of s
  */
-char *leet(char *src)
+char *leet(char *s)
 {
-	int i;
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		if (src[i] == 'a' || src[i] == 'A')
+		for (j = 0; j <= 9; j++)
 		{
-			src[i] = '4';
-		}
-		else if (src[i] == 'e' || src[i] == 'E')
-		{
-			src[i] = '3';
-		}
-		else if (src[i] == 'o' || src[i] == 'O')
-		{
-			src[i] = '0';
-		}
-		else if (src[i] == 't' || src[i] == 'T')
-		{
-			src[i] = '7';
-		}
-		else if (src[i] == 'l' || src[i] == 'L')
-		{
-			src[i] = '1';
-		}
-		else
-		{
-			continue;
+			if (a[j] == s[i])
+				s[i] = b[j];
 		}
 	}
-	return (src);
+	return (s);
 }
