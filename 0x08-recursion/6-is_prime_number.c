@@ -24,5 +24,5 @@ int checker(int n, int base)
  */
 int is_prime_number(int n)
 {
-	return check(n, 2);
+	return checker(n, 2);
 }
