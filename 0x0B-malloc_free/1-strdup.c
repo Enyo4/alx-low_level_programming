@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
+	/* length of string */
 	for (i = 0; str[i] != '\0'; i++)
 	{
 
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
+	/* copy the content of str to cpy */
 	while (str[j] != '\0')
 	{
 		cpy[j] = str[j];
