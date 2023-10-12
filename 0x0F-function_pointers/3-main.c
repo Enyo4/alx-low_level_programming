@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 
 	oprt = get_op_func(argv[2]);
-	sign = *argv[2]; 
+	sign = *argv[2];
 
 	if ((sign == '/' || sign == '%') && num2 == 0)
 	{
