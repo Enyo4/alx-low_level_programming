@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int num1, num2;
+	int num1, num2;
 	int (*oprt)(int, int);
 	char sign;
 
