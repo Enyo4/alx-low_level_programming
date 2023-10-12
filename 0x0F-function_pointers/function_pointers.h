@@ -2,6 +2,7 @@
 #define FUNCTION_POINTERS_H
 
 void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, size_t size, void (*action)(int));
 int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
