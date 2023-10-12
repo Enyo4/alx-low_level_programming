@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int num1, num2;
 	int (*oprt)(int, int);
-	char sign;
+	char *sign;
 
 	if (argc != 4)
 	{
@@ -21,11 +21,11 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	sign = *argv[2];
+	sign = argv[2];
 
 	oprt = get_op_func(sign);
 
-	if (oprt = NULL)
+	if (oprt == NULL)
 	{
 		printf("Error\n");
 		exit(99);
