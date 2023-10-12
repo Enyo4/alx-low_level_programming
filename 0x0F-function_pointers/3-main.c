@@ -21,16 +21,11 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-
-	oprt = get_op_func(argv[2]);
 	sign = *argv[2];
 
-	if ((sign == '/' || sign == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	if (!oprt)
+	oprt = get_op_func(sign);
+
+	if (oprt = NULL)
 	{
 		printf("Error\n");
 		exit(99);
