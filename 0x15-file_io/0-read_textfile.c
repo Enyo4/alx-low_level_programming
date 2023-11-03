@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
- * read_textfile - Reads a test file and prints it to th e POSIX standard output
+/**
+ * read_textfile - Reads a test file and prints it to the POSIX standard output
  * @filename: The name of the file
  * @letters: The number of letters to read and print
  *
